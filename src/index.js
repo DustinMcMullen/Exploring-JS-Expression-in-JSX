@@ -1,4 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root"));
+const fName = "Dustin";
+const lName = "McMullen";
+const faveFood = "Pizza";
+
+ReactDOM.render(
+  <div>
+    <h1>Hello {fName + " " + lName}!</h1>
+    <p>your favorite food is {faveFood}.</p>
+  </div>,
+  document.getElementById("root")
+);
